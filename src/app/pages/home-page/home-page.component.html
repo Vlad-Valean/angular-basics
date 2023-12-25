@@ -1,4 +1,4 @@
-<div>
+<div class="d-flex flex-column justify-center align-center">
   <h2>Cookies: {{ no_cookies }}</h2>
   <div>
     <button [style.background-color]="dynamic_color" (click)="increment(); switch()" *ngIf="no_cookies <= 10">Make</button>
