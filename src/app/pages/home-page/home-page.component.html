@@ -1,7 +1,9 @@
-<div class="d-flex flex-column justify-center align-center">
+<div class="d-flex flex-column justify-content-between align-items-center w-100 h-50">
   <h2>Cookies: {{ no_cookies }}</h2>
   <div>
-    <button [style.background-color]="dynamic_color" (click)="increment(); switch()" *ngIf="no_cookies <= 10">Make</button>
-    <button [style.background-color]="dynamic_color" (click)="decrement(); switch()" *ngIf="no_cookies >= 3">Eat</button>
+    <button [style.background-color]="dynamic_color" (click)="increment(); switch()" *ngIf="no_cookies <= 10">Make
+    </button>
+    <button [style.background-color]="dynamic_color" (click)="decrement(); switch()" *ngIf="no_cookies >= 3">Eat
+    </button>
   </div>
 </div>
